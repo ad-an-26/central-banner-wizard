@@ -1,10 +1,16 @@
-import React from "react";
+// src/App.jsx
+import { useState } from 'react';
+import Banner from './components/Banner';
 
 function App() {
+  const [bannerText, setBannerText] = useState('I enjoy building cool web apps!');
+  const [bannerColor, setBannerColor] = useState('#4CAF50');
+  const [bannerImage, setBannerImage] = useState('');
+
   return (
-    <>
-      <h1>Hello world!</h1>
-    </>
+    <div>
+      <Banner text={bannerText} bgColor={bannerColor} image={bannerImage} />
+    </div>
   );
 }
 
