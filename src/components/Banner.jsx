@@ -1,18 +1,20 @@
-// src/components/Banner.jsx
-const Banner = ({ text, bgColor, image }) => {
+import React from 'react';
+
+function Banner({ backgroundColor, text, imageUrl }) {
   return (
     <div
-      className={`w-full h-96 flex items-center justify-center text-white text-3xl text-center rounded-lg shadow-lg border-2 border-gray-800`}
+      className="w-full p-6 text-center text-white m-1 rounded-md"
       style={{
-        backgroundColor: bgColor || '#4CAF50',
-        backgroundImage: image ? `url(${image})` : 'none',
+        backgroundColor: backgroundColor || '#4A90E2', // Default color
+        backgroundImage: imageUrl ? `url(${imageUrl})` : 'none',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
       }}
     >
-      {text || 'I enjoy building cool web apps!'}
+      <h1 className="text-4xl font-bold">{text || "I enjoy exploring open-source projects!"}</h1>
     </div>
   );
-};
+}
 
 export default Banner;
