@@ -11,7 +11,7 @@ const ControlPanel = ({
   setTextStyles,
   setBannerBorder,
   resetBanner,
-  currentHtmlContent
+  currentHtmlContent,
 }) => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [textStyles, setTextStylesState] = useState({
@@ -52,7 +52,8 @@ const ControlPanel = ({
   const handleTextChange = (e) => {
     setText(e.target.value);
     setHtmlContent(""); // Clear rich text content when using simple text
-  };  const handleTextSizeChange = (e) => setTextSize(e.target.value);
+  };
+  const handleTextSizeChange = (e) => setTextSize(e.target.value);
 
   const handleStyleToggle = (style) => {
     const updatedStyles = {
@@ -137,7 +138,7 @@ const ControlPanel = ({
         </div>
       )}
 
-{openDropdown === "text" && (
+      {openDropdown === "text" && (
         <div className="p-4 border rounded-md mb-2">
           <div className="mb-4">
             <label className="font-semibold block mb-2">Text Editor:</label>
@@ -148,7 +149,7 @@ const ControlPanel = ({
           </div>
         </div>
       )}
-      
+
       {openDropdown === "image" && (
         <div className="p-4 border rounded-md mb-2">
           <label className="font-semibold">Upload Image:</label>
@@ -163,7 +164,7 @@ const ControlPanel = ({
           </p>
         </div>
       )}
-      
+
       <div className="mt-4 flex items-center justify-between">
         <div>
           <input

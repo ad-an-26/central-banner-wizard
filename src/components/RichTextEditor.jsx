@@ -93,9 +93,7 @@ function RichTextEditor({ setHtmlContent, initialHtml }) {
                 <ContentEditable className="editor-input p-4 min-h-[200px]" />
               }
               placeholder={
-                <div className="editor-placeholder">
-                  Enter your text here...
-                </div>
+                <div className="editor-placeholder">Enter your text here..</div>
               }
             />
             <HistoryPlugin />
