@@ -12,7 +12,15 @@
     "test:ui": "vitest --ui"
   },
   "dependencies": {
+    "@lexical/code": "^0.27.2",
+    "@lexical/html": "^0.27.2",
+    "@lexical/link": "^0.27.2",
+    "@lexical/list": "^0.27.2",
+    "@lexical/react": "^0.27.2",
+    "@lexical/rich-text": "^0.27.2",
+    "@lexical/table": "^0.27.2",
     "@tailwindcss/vite": "^4.0.14",
+    "lexical": "^0.27.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
