@@ -146,6 +146,7 @@ const ControlPanel = ({
               setHtmlContent={setHtmlContent}
               initialHtml={currentHtmlContent} // Pass existing content here
             />
+            Text Editor is a work in progress...
           </div>
         </div>
       )}
